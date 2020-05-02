@@ -23,9 +23,9 @@ summary {
  * Correct `inline-block` display not defined in IE 8/9. */
 audio,
 canvas,
-video {
+/* video {
   display: inline-block;
-}
+} */
 
 /*
  * Prevent modern browsers from displaying `audio` without controls.
@@ -151,7 +151,7 @@ pre {
 /*
  * Set consistent quote types. */
 q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "\201C""\201D""\2018""\2019";
 }
 
 /*
@@ -443,9 +443,21 @@ i {
 }
 
 .button {
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.05) 1%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.05) 1%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 1%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 }
 
 ul {
@@ -520,7 +532,8 @@ ul li {
   width: 98.2%;
 }
 
-.row:before, .row:after {
+.row:before,
+.row:after {
   content: " ";
   display: table;
 }
@@ -552,7 +565,8 @@ ul li {
   *zoom: 1;
 }
 
-.row .row:before, .row .row:after {
+.row .row:before,
+.row .row:after {
   content: " ";
   display: table;
 }
@@ -568,7 +582,8 @@ ul li {
   *zoom: 1;
 }
 
-.row .row.collapse:before, .row .row.collapse:after {
+.row .row.collapse:before,
+.row .row.collapse:after {
   content: " ";
   display: table;
 }

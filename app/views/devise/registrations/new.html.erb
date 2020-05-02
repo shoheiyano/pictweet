@@ -1,5 +1,5 @@
 <div class="contents row">
-  <%= video_tag("/assets/videos/Wolf.mp4", :class => "contents_video", :autoplay => true, :loop => true, :muted => true) %>
+  <%# <%= video_tag("/assets/videos/Wolf.mp4", :class => "contents_video", :autoplay => true, :loop => true, :muted => true) %> 
   <div class="container user_signUp">
     <h2>Sign up</h2>
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
